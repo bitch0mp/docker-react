@@ -3,10 +3,10 @@ services:
   - docker
 
 before_install:
-  - docker build -t kiki/docker-react -f Dockerfile.dev .
+  - docker build -t bitch0mp/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run kiki/docker-react npm run test -- --coverage
+  - docker run bitch0mp/docker-react npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
