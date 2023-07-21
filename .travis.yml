@@ -11,7 +11,8 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "Udemy-env"
+  app: "Udemy"
+  env: "Udemy-env"
   bucket_name: "elasticbeanstalk-us-east-1-342939767414"
   bucket_path: "Udemy"
   on:
